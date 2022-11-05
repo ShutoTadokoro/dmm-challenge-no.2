@@ -1,0 +1,16 @@
+<div class="show_book">
+    <div class="create">
+        <%= flash[:create] %>
+    </div>
+    <div class="update">
+        <%= flash[:update] %>
+    </div>
+    <p class="show_p"><b>Title:</b> <%= @book.title %></p>
+    <p class="show_p"><b>Body:</b> <%= @book.body %></p>
+</div>
+<div class="show_link">
+    <ul>
+        <li><%= link_to "Edit", edit_book_path(@book), class: "botton" %></li>
+        <li><%= link_to "Back", "/books", class: "botton" %></li>
+    </ul>
+<div>
